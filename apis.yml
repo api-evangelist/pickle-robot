@@ -1,8 +1,26 @@
 aid: pickle-robot
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pickle-robot.png
 name: Pickle Robot
-description: 'Pickle Robot is a company surfaced as a portfolio company of version-one-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: robotics. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pickle Robot builds Physical AI systems for supply chain automation,
+  best known for autonomous truck- and container-unloading robots that handle non-palletized,
+  floor-loaded freight. Its Dill Autonomy Engine (DAE) pairs classical optimal control
+  with generative AI and foundation models, driving an industrial arm with vision,
+  LiDAR, and an air-suction gripper to unload 400-1,500 cases per hour. Founded in
+  2018 and headquartered in the Boston, Massachusetts area, the company deploys into
+  existing warehouses in days with no WMS integration and counts UPS among its customers.
+  Pickle Robot exposes no public developer API; this profile captures its identity,
+  domain-security posture, and public web properties in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/pickle-robot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Robotics
+- Physical AI
+- Supply Chain
+- Automation
+- Logistics
+- Warehouse
+- Computer Vision
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pickle-robot-domain-security.yml
 - type: Website
   url: https://www.picklerobot.com
+- type: GitHubOrganization
+  url: https://github.com/Pickle-Robot
+- type: Blog
+  url: https://www.picklerobot.com/news
+- type: Support
+  url: https://www.picklerobot.com/contact
+- type: PrivacyPolicy
+  url: https://www.picklerobot.com/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
